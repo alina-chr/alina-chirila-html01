@@ -1,60 +1,531 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Forms</title>
+
+
+  <style>
+    .navigation>li:not(:last-child)::after {
+      content: "*";
+      margin: 0.25em;
+    }
+
+    .navigation {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navigation li {
+      display: inline;
+    }
+
+    .mouse-list {
+      list-style-type: none;
+
+    }
+
+    .mouse-list li {
+      display: inline;
+    }
+
+    .extension-cord {
+      list-style: none;
+    }
+
+    .extension-cord li {
+      display: inline;
+    }
+
+    .phone {
+      list-style: none;
+    }
+
+    .phone li {
+      display: inline;
+    }
+  </style>
 </head>
+
 <body>
-  <form>
+
+  <ul class="navigation">
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Home"
+      >Home</a>
+    </li>
+
+    <li><a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Place Order"
+      ><b>Place Order</b></a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Customer Service"
+      >Customer Service</a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Contact"
+      >Contact</a>
+    </li>
+  </ul>
+
+  <h1>Place Order</h1>
+
+  <p>This is the <b>guest checkout</b></p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2>Products</h2>
+
+  <ul class="mouse-list">
+
+    <li>
+      <img
+        src="images/mouse.jpg"
+        alt="mouse image"
+      >
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Sterge"
+      >Sterge</a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Editeaza"
+      >Editeaza</a>
+    </li>
+  </ul>
+
+  <hr>
+
+  <ul class="extension-cord">
+    <li>
+      <img
+        src="images/extension_chord.jpg"
+        alt="extension cord image"
+      >
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Sterge"
+      >Sterge</a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Editeaza"
+      >Editeaza</a>
+    </li>
+  </ul>
+
+  <hr>
+
+  <ul class="phone">
+    <li>
+      <img
+        src="images/phone.jpg"
+        alt="phone image"
+      >
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Sterge"
+      >Sterge</a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Editeaza"
+      >Editeaza</a>
+    </li>
+  </ul>
+
+  <hr>
+
+  <h2>Order now</h2>
+
+  <p>
+    On our website <i>no account is needed</i>.
+  </p>
+
+  <ol>
+    <li>First we need some info about yourself. <b>Don’t forget to provide a phone</b> .</li>
+    <li>Then we need your <i>real </i>shipping address. </li>
+    <li>Finally, your credit card information.</li>
+  </ol>
+
+  <form method="POST">
     <fieldset>
       <legend>Personal Information</legend>
-      <p>Title: <label>Mr</label><input type="radio" checked> <label>Ms</label><input type="radio"> <label>Unspecified</label><input type="radio"></p>
-      <label>*Name:</label><input placeholder="Name"><br><br>
-      <label>*Surname:</label><input placeholder="Surname"><br><br>
-      <label>*Email:</label><input placeholder="Email"> <br><br>
-      <label>*Phone</label><input placeholder="Phone"><br><br>
+      <label>Title:</label>
+      <label for="gender-mr">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-mr"
+        value="mr"
+        checked
+      >
+
+      <label for="gender-ms">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-ms"
+        value="ms"
+      >
+
+      <label for="gender-unspec">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-unspec"
+        value="unspec"
+      >
+
+      <br> <br>
+
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+      >
+
+      <br><br>
+
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Surname"
+        required
+      >
+
+      <br><br>
+
+      <label for="email">*Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      >
+
+      <br><br>
+
+      <label for="phone">*Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Phone"
+        required
+      >
     </fieldset>
 
     <fieldset>
       <legend>Address</legend>
-      <label>*Name:</label><input placeholder="Name"><br><br>
-      <label>*Surname:</label><input placeholder="Surname"><br><br>
-      <label>*Phone</label><input placeholder="Phone"><br><br>
-      <label>*Address Line 1:</label><input placeholder="Address Line 1"><br><br>
-      <label>Address Line 2:</label><input placeholder="Address Line 2"><br><br>
-      <label>*City:</label><input placeholder="City"><br><br>
-      <label>*State:</label>
-      <select>
-        <option>--State--</option>
-      </select><br><br>
-      <label>*Postcode</label><input placeholder="Postcode"><br><br>
+      <label for="name-adress">*Name:</label>
+      <input
+        type="text"
+        id="name-adress"
+        name="name-adress"
+        placeholder="Name"
+        required
+      >
+
+      <br><br>
+
+      <label for="surname-adress">*Surname:</label>
+      <input
+        type="text"
+        id="surname-adress"
+        name="surname-adress"
+        placeholder="Surname"
+        required
+      >
+
+      <br><br>
+
+      <label for="phone-adress">*Phone:</label>
+      <input
+        type="tel"
+        id="phone-adress"
+        name="phone-adress"
+        placeholder="Phone"
+        required
+      >
+
+      <br><br>
+
+      <label for="adress-line-1">*Adress Line 1:</label>
+      <input
+        type="text"
+        name="adress-line-1"
+        id="adress-line-1"
+        placeholder="Adress Line 1"
+        required
+      >
+
+      <br><br>
+
+      <label for="adress-line-2">Adress Line 2:</label>
+      <input
+        type="text"
+        name="adress-line-2"
+        id="adress-line-2"
+        placeholder="Adress Line 2"
+      >
+
+      <br><br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      >
+
+      <br><br>
+
+      <label for="state">*State:</label>
+      <select
+        name="state"
+        id="state"
+        required
+      >
+        <option value="">--State--</option>
+        <option value="alabama">Alabama</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="northDakota">North Dakota</option>
+        <option value="newYork">New York</option>
+        <option value="boston">Boston</option>
+        <option value="other">Other</option>
+      </select>
+
+      <br><br>
+
+      <label for="postcode">*Postcode</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      >
     </fieldset>
 
     <fieldset>
       <legend>Card Information</legend>
-      <label>*Card number</label><input placeholder="Card Number"><br><br>
-      <label>*Name on card</label><input placeholder="Name on card"><br><br>
-      <label>*Expiry Month</label>
-      <select>
-        <option>January</option>
-      </select>
-      <label>*Expiry Year</label>
-      <select>
-        <option>2019</option>
-      </select>    
+      <label for="card-number">*Card number:</label>
+      <input
+        type="text"
+        id="card-number"
+        name="card-number"
+        placeholder="Card Number"
+        required
+      >
+
       <br><br>
-      <label>*CVV</label><input placeholder="CVV">
+
+      <label for="name-on-card">*Name on card:</label>
+      <input
+        type="text"
+        id="name-on-card"
+        name="name-on-card"
+        placeholder="Name on card"
+        required
+      >
+
+      <br><br>
+
+      <label for="expiry-month">*Expiry month:</label>
+      <select
+        name="expiry-month"
+        id="expiry-month"
+        required
+      >
+
+        <option value="january">January </option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+      </select>
+
+
+      <label for="expiry-year">*Expiry year:</label>
+      <select
+        name="expiry-year"
+        id="expiry-year"
+        required
+      >
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+
+      <br><br>
+
+      <label for="cvv">*CVV:</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        placeholder="CVV"
+        required
+      >
+
       <p><em>We do not store credit card information!</em></p>
     </fieldset>
 
     <fieldset>
       <legend>Form Controls</legend>
-      <input type="checkbox"><label>*You are required to agree to the <a href="">terms and conditions</a></label> <br><br>
-      <input type="checkbox"><label>Can we send you emails?</label> <br><br>
-      <input type="checkbox"><label>GDPR generic consent?</label> <br><br>
-      <button>PLACE ORDER</button>
-      <button>Reset</button>
+      <input
+        type="checkbox"
+        name="terms-and-conditions"
+        id="terms-and-conditions"
+        required
+      >
+      <label for="terms-and-conditions">
+        *You are required to agree to the
+        <a
+          href="http://google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="terms and conditions"
+        >terms and conditions</a>
+
+        <br><br>
+
+        <input
+          type="checkbox"
+          name="email-consent"
+          id="email-consent"
+        >
+        <label for="email-consent"> Can we send you emails?</label>
+
+        <br><br>
+
+        <input
+          type="checkbox"
+          name="gdpr-consent"
+          id="gdpr-consent"
+        >
+        <label for="gdpr-consent">GDPR generic consent?</label>
+
+        <br><br>
+
+        <button type="submit">PLACE ORDER</button>
+
+        <button type="reset">Reset</button>
     </fieldset>
   </form>
 
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <ul class="navigation">
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Home"
+      >Home</a>
+    </li>
+
+    <li><a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Place Order"
+      ><b>Place Order</b></a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Customer Service"
+      >Customer Service</a>
+    </li>
+
+    <li>
+      <a
+        href="http://google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google Contact"
+      >Contact</a>
+    </li>
+  </ul>
 </body>
+
 </html>

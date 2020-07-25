@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <title>HTML01 C04 E06</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 </head>
+
 <body>
 
+  <h1>New Adress</h1>
+
+  <p>
+    <img
+      src="images/new_address.jpg"
+      alt="new adress image"
+    >
+  </p>
+
+  <p>
+    <b>Please provide a valid address</b>, otherwise we will not be able to send your stuff.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2>Useful links</h2>
+
+  <ul>
+    <li>
+      <a
+        href="
+      https://www.google.com/maps
+      "
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Google"
+      >
+        https://www.google.com/maps
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://www.coduripostale.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Coduri postale"
+      >https://www.coduripostale.com/</a>
+    </li>
+  </ul>
+
+  <h2>Adress Form</h2>
+
+  <form method="POST">
+    <fieldset>
+      <legend>Adress Information:</legend>
+
+      <label>Title:</label>
+      <label for="gender-mr">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-mr"
+        value="mr"
+        checked
+      >
+
+      <label for="gender-ms">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-ms"
+        value="ms"
+      >
+
+      <label for="gender-unspec">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender-unspec"
+        value="unspec"
+      >
+
+      <br> <br>
+
+      <label for="name">*Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+      >
+
+      <br><br>
+
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Surname"
+        required
+      >
+
+      <br><br>
+      <label for="phone">*Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Phone"
+        required
+      >
+
+      <br><br>
+
+      <label for="adress-line-1">*Adress Line 1:</label>
+      <input
+        type="text"
+        name="adress-line-1"
+        id="adress-line-1"
+        placeholder="Adress Line 1"
+        required
+      >
+
+      <br><br>
+
+      <label for="adress-line-2">Adress Line 2:</label>
+      <input
+        type="text"
+        name="adress-line-2"
+        id="adress-line-2"
+        placeholder="Adress Line 2"
+      >
+
+      <br><br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      >
+
+      <br><br>
+      <label for="state">*State</label>
+      <select
+        name="state"
+        id="state"
+        required
+      >
+        <option value="">--State--</option>
+        <option value="alabama">Alabama</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="northDakota">North Dakota</option>
+        <option value="newYork">New York</option>
+        <option value="boston">Boston</option>
+        <option value="other">Other</option>
+      </select>
+
+      <br><br>
+
+      <label for="postcode">*Postcode</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      >
+
+      <br><br>
+
+      <input
+        type="checkbox"
+        name="gdpr-consent"
+        id="gdpr-consent"
+      >
+      <label for="gdpr-consent">GDPR generic consent?</label>
+
+      <br><br>
+
+      <button type="submit">Create Account</button>
+
+      <button type="reset">Reset</button>
+      </label>
+
+    </fieldset>
+  </form>
 </body>
+
 </html>
