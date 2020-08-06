@@ -23,3 +23,21 @@ body {
 .box-3 {
   background-color: #ffe4c4;
 }
+
+/* Pentru al doilea patrat
+Seteaza bordura gri
+Seteaza culoarea textului alb
+ */
+.box-2 {
+  border-color: gray;
+  color: white;
+}
+
+/* Pentru al treilea patrat
+Seteaza bordura albastra
+Seteaza culoarea textului rosu
+ */
+.box-3 {
+  border-color: blue;
+  color: red;
+}
