@@ -1,0 +1,100 @@
+/* .pane-long .heading {
+  margin-top: 12px;
+  margin-right: 0;
+  margin-bottom: 12px;
+  margin-left: 5px;
+} */
+
+.pane-short .heading {
+  margin: 12px 0 12px 5px;
+}
+
+/* .pane-long .container {
+  padding-top: 15px;
+  padding-right: 8px;
+  padding-bottom: 15px;
+  padding-left: 4px;
+} */
+.pane-short .container {
+  padding: 15px 8px 15px 4px;
+}
+
+/* .pane-long .para {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+} */
+.pane-short .para {
+  padding: 10px;
+}
+
+/* .pane-long .short-para {
+  width: 65%;
+  border: 1px solid gold;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-left: auto;
+
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+} */
+.pane-short .short-para {
+  width: 65%;
+  border: 1px solid gold;
+  margin: 12px auto;
+  padding: 5px 8px;
+}
+
+/* .pane-long .list {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+}
+ */
+.pane-short .list {
+  padding: 0 0 0 8px;
+}
+
+/* .pane-long .list li {
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 12px;
+  margin-left: 5px;
+} */
+.pane-short .list li {
+  margin: 5px 0 12px 5px;
+}
+
+/* .pane-long .navigation {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+} */
+.pane-short .navigation {
+  margin: 10px 15px 10px 8px;
+}
+
+/* .pane-long .anchor-list {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+} */
+.pane-short .anchor-list {
+  margin: 5px;
+}
+
+/* .pane-long .anchor-list li {
+  display: inline-block;
+  margin: 0 10px;
+} */
+.pane-short .anchor-list li {
+  display: inline-block;
+  margin: 0 10px;
+}

@@ -44,3 +44,20 @@ cutia verde cu 25px la dreapta si 100px in jos */
   /* transform: translateX(100px); -face acealsi lucru */
   /* daca nu are pozitionare absoluta el inca lasa spatiu unde era initial */
 }
+
+/* tema */
+
+/* Folosind metoda skew(10deg, 10 deg) intinde cutia maro si
+mut-o cu 5px in sus si 10px spre stanga */
+
+.box-brown {
+  transform: skew(10deg, 10deg) translate(10px, 5px);
+}
+
+/* Folosind metoda scale(1.2) mareste cutia galbena si
+roteste-o cu -15 grade
+ */
+
+.box-yellow {
+  transform: rotate(-15deg) scale(1.2);
+}

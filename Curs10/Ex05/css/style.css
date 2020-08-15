@@ -45,3 +45,49 @@ h2:nth-of-type(odd) {
 /* dolor - :nth-child(3) */
 /* liste de nivel superior */
 /* body > ul:..... */
+
+/* tema */
+/* Subliniaza primele elemente li din listele neordonate
+cu clasa u-line (si doar din listele neordonate)  (:first-child) */
+.u-line li:first-child {
+  text-decoration: underline;
+}
+
+/* Subliniaza ultimele elemente li din toate
+listele neordonate (:last-child) */
+
+ul li:last-child {
+  text-decoration: underline;
+}
+/* ^ is this ok? I'm lost */
+
+/* Adauga o linie prin ancora celui de-al doilea
+element li din elementul cu clasa last-list (:nth-child)  */
+.last-list > li:nth-child(2) {
+  text-decoration: line-through;
+}
+
+/* Coloreaza mov toate cuvintele “Dolor” si doar ele din document,
+ fara a adauga clase in plus (:nth-child)  */
+
+ul > li > ul > li:nth-child(3) {
+  color: purple;
+}
+
+/* Aplica un fundal maro si un padding orizontal
+de 15px pe paragrafele impare (:nth-of-type)
+ */
+
+p:nth-of-type(odd) {
+  background-color: brown;
+  padding: 0 15px;
+}
+
+/* Inconjoara cu o bordura neagra de 1px  si un padding
+de 8px fiecare a 3-a lista neordonata de nivel superior \
+din document. (:nth-of-type)
+ */
+ul:nth-of-type(3n) {
+  padding: 8px;
+  border: 1px solid black;
+}

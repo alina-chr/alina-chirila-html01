@@ -31,3 +31,38 @@ niciodata nu se pune text in content (bad practice - traducere site) */
   border-radius: 5px;
   transform: skewY(15deg);
 }
+
+/* tema */
+
+/* Stileaza al doilea paragraf astfel incat sa arate ca o lista neordonata,
+folosind ::before pentru puncte care sa arate ca cercuri galbene alungite
+pe verticala
+ */
+/* I failed */
+p a {
+  display: block;
+}
+
+.my-second-list a::before {
+  display: inline-block;
+  width: 4px;
+  height: 5px;
+  background-color: yellow;
+  content: '';
+  margin-left: 5px;
+  border-radius: 5px;
+  transform: skewY(10deg);
+}
+
+/* Folosind ::after pentru aceste ancore,
+ stileaza romburi mov alungite pe verticala, folosind transformarii CSS (skew si rotate) */
+
+.my-second-list a::after {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: purple;
+  content: '';
+  margin-left: 5px;
+  transform: skewY(15deg);
+}
