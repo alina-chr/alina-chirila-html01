@@ -51,8 +51,7 @@
 4 secunde cu functia ease si un delay de o secunda
  */
 .box-purple {
-  transition: width 4s ease 1s;
-  transition: height 4s ease 1s;
+  transition: width 4s ease 1s, height 4s ease 1s;
 }
 
 .box-purple:hover {

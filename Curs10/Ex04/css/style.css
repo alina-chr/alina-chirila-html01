@@ -111,7 +111,7 @@ dupa elementul cu clasa random (adiacenta generala)
  directi ai listelor cu clasa my-list
  */
 
-.my-list > ul > li {
+.my-list > li > ul > li {
   text-decoration: underline;
 }
 

@@ -36,7 +36,7 @@ p:hover i {
 /* Aplica pe ancorele din lista cu clasa .secondary
 o stare de hover in care linia se muta deasupra
  */
-.secondary:hover a {
+.secondary a:hover {
   text-decoration: overline;
 }
 
@@ -44,7 +44,7 @@ o stare de hover in care linia se muta deasupra
  in care acestea sa se faca verzi iar linia sa dispara complet
  */
 
-.main li:nth-child(odd):hover a {
+.main li:nth-child(odd) a:hover {
   color: green;
   text-decoration: none;
 }
