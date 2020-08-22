@@ -1,4 +1,4 @@
-/* /* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -588,6 +588,122 @@ a {
 .home-catalog-preview .catalog-cta:hover::before {
   width: 80px;
 }
+
+/* tema */
+
+.home-cta {
+  min-height: 320px;
+  background: url('../images/banners/banner-04.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
+}
+.home-cta a {
+  margin-right: 20px;
+}
+.home-cta a span {
+  color: #fff;
+  padding: 2px 2px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0px;
+}
+.home-cta a span:first-child {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.home-cta a span:last-child {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.home-cta a span span:last-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.home-cta a span > span {
+  padding: 2px 5px;
+  font-size: 18px;
+}
+
+.home-social header h1 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.home-social {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+/* ^ am estimat aici, nu prea imi dau seama
+din XD care e dimensiunea padding-ului,
+insa mi se pare ca ar trebui sa fie
+ un white space aici  */
+
+.home-social main {
+  text-align: center;
+}
+.home-social main ul li {
+  display: inline-block;
+  padding: 5px 7px;
+}
+
+.home-social a i {
+  color: #707070;
+  font-size: 25px;
+  padding: 10px 15px;
+  border: 2px solid #707070;
+  border-radius: 50%;
+}
+
+/* aici, la ul-ul din home-payment mi-am dorit foarte
+tare sa le despart in html in doua liste.
+I did my best, dar nu sunt foarte sigura
+ de ce a iesit:*/
+
+.home-payment {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.home-payment ul {
+  margin: 0 auto;
+  width: 700px;
+}
+.home-payment ul li {
+  display: inline;
+}
+.home-payment ul li:first-child {
+  margin-left: 30%;
+}
+.home-payment ul li:nth-child(4) {
+  margin-right: 40%;
+}
+.home-payment ul li:nth-child(5) {
+  margin-left: 35%;
+  margin-top: 10px;
+}
+.footer-bottom {
+  margin: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-bottom p:first-child {
+  margin-bottom: 5px;
+}
+
+.footer-bottom a img {
+  margin-left: 5px;
+}
+
+/* tema */
 
 .footer-top {
   min-height: 322px;
